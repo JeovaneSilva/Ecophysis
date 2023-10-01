@@ -1,21 +1,26 @@
 # Ecophysis
 ⬜ Projeto em andamento
 
-## Desenvolvido por: 
+## ​​​​🖥️​ Desenvolvido por: 
 <ul>
-<li><a href="https://github.com/KayoRodrigues1235" target="_blank">Kayo Rodriguez</a>: Desenvolveu todo o roteiro, script, cenas, telas, sons, diálogos e a lógica do jogo. Fazendo com que o jogo obtesse o resultado desejado.</li>
+<li><a href="https://github.com/KayoRodrigues1235" target="_blank">Kayo Rodriguez</a>: Desenvolveu todo o roteiro, script, cenas, telas, sons, diálogos e a lógica do jogo. Fazendo com que o projeto obtesse o resultado desejado.</li>
 <li><a href="https://github.com/JeovaneSilva" target="_blank">Jeovane Lima</a>: fundador do projeto e participou da criação da tela de menu, revisão dos scripts e pesquisas sobre ideias para agregar no jogo.</li>
 </ul>
 <p><br></p>
 
-## Ferramentas Utilizadas:
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
+## ​⚒️​ Ferramentas Utilizadas:
 
-## O Que é o Projeto?
+![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)   ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)   ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+<ul>
+  <li>Godot Engine</li>
+  <li>GDScript</li>
+  <li>Visual Scripting</li>
+  <li>C# </li>
+  <li>C++</li>
+</ul>
+ <p><br></p>
+ 
+## ​​​🤷🏾​ O Que é o Projeto?
 <p>A ideia do projeto surgiu a partir de uma extensa pesquisa centrada em jogos associados ao meio ambiente, o presente 
 estudo propôs a concepção de um jogo em formato 2D. Esse jogo tem como propósito a abordagem de diversas 
 problemáticas ambientais, valendo-se da implementação de programação aliada a uma estratégia educacional baseada 
@@ -71,5 +76,8 @@ predisposição para adotar práticas mais sustentáveis em suas vidas cotidiana
 <img src="imagens-ecophysis/tela-game-over.png" width="700"> </div>
 <p><br></p>
 
-## Considerações finais:
+## ​👋🏽​ Considerações finais:
 <p>Gostariamos de expressar nossa mais profunda gratidão a todos que dedicaram seu tempo para ler sobre o nosso projeto. Cada olhar atento, cada minuto gasto compreendendo o que estamos tentando alcançar aqui é uma luz que ilumina nosso caminho. Seu apoio é um lembrete constante de que não estamos sozinhos nesta jornada e que nossa comunidade é repleta de pessoas generosas e apaixonadas. Estamos ansiosos para continuar compartilhando nosso progresso e colaborando com todos vocês. Juntos, podemos fazer grandes coisas e criar um impacto significativo. </p>
+
+
+<!--https://dev.to/envoy_/150-badges-for-github-pnk--!>
