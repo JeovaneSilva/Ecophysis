@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpsw3derxbykc"
+path="res://.godot/imported/umph-47201.mp3-296b4c478ce1776de4c7ddba7943d5d1.mp3str"
+
+[deps]
+
+source_file="res://sound effects/umph-47201.mp3"
+dest_files=["res://.godot/imported/umph-47201.mp3-296b4c478ce1776de4c7ddba7943d5d1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

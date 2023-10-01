@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwmpcncppmjki"]
+
+[ext_resource type="Script" path="res://scenes/Scripts/hitbox.gd" id="1_dn7lf"]
+[ext_resource type="AudioStream" uid="uid://dy4uaco3dna2p" path="res://sound effects/slime_squash.mp3" id="2_508ib"]
+
+[node name="hitbox" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_dn7lf")
+
+[node name="Slime" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_508ib")
+volume_db = 0.095
+pitch_scale = 1.46
+attenuation = 0.0769466
+max_polyphony = 2
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

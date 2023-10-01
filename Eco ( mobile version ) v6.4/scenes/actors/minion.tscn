@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://bchhivm5t3rax"]
+
+[ext_resource type="Script" path="res://scenes/actors/minion.gd" id="1_50jho"]
+[ext_resource type="Texture2D" uid="uid://bdhd2ryhmpwqg" path="res://assets/Enemy/Slime - trash/craftpix-net-257087-free-slime-sprite-sheets-pixel-art/Green_Slime/Walk.png" id="1_d5nl2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7n0n0"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7l6v3"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83l2c"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26hpb"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5tny"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnalq"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajjit"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlhy3"]
+atlas = ExtResource("1_d5nl2")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tiabp"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_7n0n0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7l6v3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83l2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26hpb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e5tny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnalq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajjit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vlhy3")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 9.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hekp1"]
+size = Vector2(75, 38)
+
+[node name="Minion" type="CharacterBody2D" groups=["Enemy"]]
+position = Vector2(143, 91)
+script = ExtResource("1_50jho")
+
+[node name="Animated" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tiabp")
+animation = &"moving"
+frame_progress = 0.269405
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 47)
+shape = SubResource("RectangleShape2D_hekp1")
+debug_color = Color(0.992157, 0, 0.254902, 0.419608)
+
+[node name="Timer" type="Timer" parent="."]

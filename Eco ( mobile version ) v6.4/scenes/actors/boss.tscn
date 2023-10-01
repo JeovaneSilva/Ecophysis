@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=3 uid="uid://dkaethqted4yb"]
+
+[ext_resource type="Texture2D" uid="uid://oqv35tbt5v70" path="res://assets/Enemy/Slime - trash/craftpix-net-257087-free-slime-sprite-sheets-pixel-art/Red_Slime/Idle.png" id="1_vpa8g"]
+[ext_resource type="Script" path="res://scenes/Scripts/boss.gd" id="1_xr27q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0a7n"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wbsr"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fuhb7"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ga4t"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdqdp"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7c1e"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pckyr"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2was"]
+atlas = ExtResource("1_vpa8g")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tn1xm"]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_s0a7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wbsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fuhb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ga4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdqdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7c1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pckyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2was")
+}],
+"loop": true,
+"name": &"Ilde",
+"speed": 10.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(153, 84)
+script = ExtResource("1_xr27q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -102)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_tn1xm")
+animation = &"Ilde"
+autoplay = "Ilde"
+frame_progress = 0.315382
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

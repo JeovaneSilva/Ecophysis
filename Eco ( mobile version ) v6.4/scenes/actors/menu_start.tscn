@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnkb4ur8ffgr"]
+
+[ext_resource type="Script" path="res://scenes/Scripts/menu_start.gd" id="1_b2p05"]
+[ext_resource type="FontFile" uid="uid://dgqshkbd5dr64" path="res://assets/UI_effects/font/Pixel Emulator.otf" id="2_s2o2b"]
+[ext_resource type="Texture2D" uid="uid://bocgymjwuaxhh" path="res://assets/Map/menu_Start.png" id="3_0652g"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-56, -94)
+script = ExtResource("1_b2p05")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.112
+anchor_top = 0.154
+anchor_right = 0.934
+anchor_bottom = 0.277
+offset_left = 46.16
+offset_top = -13.952
+offset_right = -54.88
+offset_bottom = -5.076
+theme_override_colors/font_color = Color(0.364706, 0.839216, 0.14902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.717647)
+theme_override_fonts/font = ExtResource("2_s2o2b")
+theme_override_font_sizes/font_size = 24
+text = "EcoPhysis
+"
+
+[node name="Restart" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.237
+anchor_top = 0.601
+anchor_right = 0.447
+anchor_bottom = 0.755
+offset_left = 51.16
+offset_top = -39.988
+offset_right = 50.96
+offset_bottom = -36.94
+text = "Start
+"
+
+[node name="Quit" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.637
+anchor_top = 0.596
+anchor_right = 0.847
+anchor_bottom = 0.777
+offset_left = -75.84
+offset_top = 11.952
+offset_right = -76.04
+offset_bottom = 9.924
+text = "Quit"
+
+[node name="MenuStart" type="Sprite2D" parent="."]
+position = Vector2(212, 158)
+scale = Vector2(0.347168, 0.319824)
+texture = ExtResource("3_0652g")
+
+[connection signal="pressed" from="CanvasLayer/Restart" to="." method="_on_restart_pressed"]

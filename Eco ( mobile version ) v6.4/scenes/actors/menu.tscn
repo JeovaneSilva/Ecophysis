@@ -1,0 +1,109 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbx2ao0rysktw"]
+
+[ext_resource type="Texture2D" uid="uid://dc2anhua184vi" path="res://assets/Map/Class rooms/class3.jpg" id="1_6uptv"]
+[ext_resource type="Script" path="res://scenes/Scripts/gameover.gd" id="1_nwie3"]
+[ext_resource type="FontFile" uid="uid://cbo8hcyrnihyx" path="res://assets/UI_effects/font/game-over.ttf" id="2_fa1dp"]
+[ext_resource type="Texture2D" uid="uid://bnaxmjym7fewq" path="res://assets/Enemy/Francisca.png.png" id="4_womb7"]
+[ext_resource type="Texture2D" uid="uid://3vi8rycwr4f" path="res://assets/UI_effects/Mini FX, Items & UI/Mini UI/Dialog_Box(16 x 16).png" id="5_ud0p6"]
+[ext_resource type="FontFile" uid="uid://by0nos6j6rjbb" path="res://assets/UI_effects/font/RevMiniPixel.ttf" id="6_81s8d"]
+[ext_resource type="AudioStream" uid="uid://bh83xbb552r1g" path="res://sound effects/kl-peach-game-over-iii-142453.mp3" id="7_74n04"]
+
+[node name="game_over" type="Node2D"]
+script = ExtResource("1_nwie3")
+
+[node name="Class3" type="Sprite2D" parent="."]
+position = Vector2(199, 91)
+scale = Vector2(0.197076, 0.241035)
+texture = ExtResource("1_6uptv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.266
+anchor_top = 0.074
+anchor_right = 0.787
+anchor_bottom = 0.34
+offset_left = -0.120003
+offset_top = 0.0879993
+offset_right = -4.84003
+offset_bottom = 0.079998
+theme_override_colors/font_color = Color(0.811765, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fa1dp")
+text = "Game  over"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.203
+anchor_top = 0.191
+anchor_right = 0.891
+anchor_bottom = 0.371
+offset_left = 0.0399933
+offset_top = 0.0919991
+offset_right = -0.119995
+offset_bottom = -7.748
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fa1dp")
+text = "tente de novo"
+
+[node name="Restart" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.237
+anchor_top = 0.601
+anchor_right = 0.447
+anchor_bottom = 0.755
+offset_left = 54.16
+offset_top = -42.988
+offset_right = 53.96
+offset_bottom = -39.94
+text = "Start
+"
+
+[node name="Quit" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.637
+anchor_top = 0.596
+anchor_right = 0.847
+anchor_bottom = 0.777
+offset_left = -73.84
+offset_top = -3.048
+offset_right = -74.04
+offset_bottom = -5.076
+text = "Quit"
+
+[node name="Francisca_png" type="Sprite2D" parent="."]
+position = Vector2(40, 160)
+texture = ExtResource("4_womb7")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 73.0
+offset_top = 147.0
+offset_right = 205.0
+offset_bottom = 187.0
+texture = ExtResource("5_ud0p6")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 12
+patch_margin_bottom = 1
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 4.0
+offset_top = 8.0
+offset_right = 130.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_81s8d")
+text = "Zero na parcial"
+max_lines_visible = 1
+visible_characters = 15
+
+[node name="game_over" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_74n04")
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_quit_pressed"]

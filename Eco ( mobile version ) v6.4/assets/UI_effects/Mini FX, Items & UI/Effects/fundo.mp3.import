@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ck1g2rx2ojbty"
+path="res://.godot/imported/fundo.mp3-9bca3fffbc81ba628a189b515f3a73a2.mp3str"
+
+[deps]
+
+source_file="res://assets/UI_effects/Mini FX, Items & UI/Effects/fundo.mp3"
+dest_files=["res://.godot/imported/fundo.mp3-9bca3fffbc81ba628a189b515f3a73a2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

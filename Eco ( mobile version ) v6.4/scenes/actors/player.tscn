@@ -1,0 +1,149 @@
+[gd_scene load_steps=19 format=3 uid="uid://b326phwjcoyvl"]
+
+[ext_resource type="Script" path="res://scenes/Scripts/player_ofc.gd" id="1_ffo0k"]
+[ext_resource type="Texture2D" uid="uid://digqlsr22mer8" path="res://assets/Main/idle.png" id="1_ufh3i"]
+[ext_resource type="Texture2D" uid="uid://bmhupksi22d84" path="res://assets/Main/jump.png" id="2_ytkkl"]
+[ext_resource type="Texture2D" uid="uid://dsai6yc5cer50" path="res://assets/Main/walk.png" id="3_aecrn"]
+[ext_resource type="AudioStream" uid="uid://c74epkv0obqwq" path="res://sound effects/-jump-7.mp3" id="5_ynpjd"]
+[ext_resource type="AudioStream" uid="uid://cpsw3derxbykc" path="res://sound effects/umph-47201.mp3" id="6_pxwwy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2avww"]
+atlas = ExtResource("1_ufh3i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fh6v1"]
+atlas = ExtResource("1_ufh3i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex3vk"]
+atlas = ExtResource("2_ytkkl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qjup"]
+atlas = ExtResource("3_aecrn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijfig"]
+atlas = ExtResource("3_aecrn")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2iii"]
+atlas = ExtResource("3_aecrn")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w88w7"]
+atlas = ExtResource("3_aecrn")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffmrn"]
+atlas = ExtResource("3_aecrn")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uc8v"]
+atlas = ExtResource("3_aecrn")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uifis"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2avww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fh6v1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ex3vk")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qjup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijfig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2iii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w88w7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffmrn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1uc8v")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k8eqw"]
+size = Vector2(17, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwumh"]
+size = Vector2(19, 21)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(155, 81)
+collision_mask = 14
+script = ExtResource("1_ffo0k")
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uifis")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0.5, 2.5)
+shape = SubResource("RectangleShape2D_k8eqw")
+
+[node name="remote" type="RemoteTransform2D" parent="."]
+remote_path = NodePath(".")
+
+[node name="hurtbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_dwumh")
+debug_color = Color(0.960784, 0.172549, 0.258824, 0.419608)
+
+[node name="ray_right" type="RayCast2D" parent="."]
+position = Vector2(5, 11)
+target_position = Vector2(5, 0)
+collision_mask = 4
+
+[node name="ray_left" type="RayCast2D" parent="."]
+position = Vector2(-6, 11)
+target_position = Vector2(-5, 0)
+collision_mask = 4
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ynpjd")
+
+[node name="hurt" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_pxwwy")
+pitch_scale = 1.86
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 112.0
+offset_bottom = 6.0
+scale = Vector2(0.3, 0.3)
+show_percentage = false
+
+[connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]

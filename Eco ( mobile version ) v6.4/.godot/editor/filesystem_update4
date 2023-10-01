@@ -1,0 +1,6 @@
+res://Level/world-1.tscn
+res://Level/shaders/Mv_clouds.gdshader
+res://Level/world-2.tscn
+res://scenes/actors/player.tscn
+res://scenes/actors/blue_enemy.tscn
+res://scenes/actors/enemy.tscn
