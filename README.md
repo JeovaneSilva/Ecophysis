@@ -3,7 +3,7 @@
 
 ## ​​​​🖥️​ Desenvolvido por: 
 <ul>
-<li><a href="https://github.com/KayoRodrigues1235" target="_blank">Kayo Rodriguez</a>: Desenvolveu todo o roteiro, script, cenas, telas, sons, diálogos e a lógica do jogo. Fazendo com que o projeto obtesse o resultado desejado.</li>
+<li><a href="https://github.com/KayoRodrigues1235" target="_blank">Kayo Rodrigues</a>: Desenvolveu todo o roteiro, script, cenas, telas, sons, diálogos e a lógica do jogo. Fazendo com que o projeto obtesse o resultado desejado.</li>
 <li><a href="https://github.com/JeovaneSilva" target="_blank">Jeovane Lima</a>: fundador do projeto e participou da criação da tela de menu, revisão dos scripts e pesquisas sobre ideias para agregar no jogo.</li>
 </ul>
 <p><br></p>
