@@ -1,13 +1,21 @@
 # Ecophysis
 ⬜ Projeto em andamento
+
+## Desenvolvido por: 
+<ul>
+<li><a href="https://github.com/KayoRodrigues1235" target="_blank">Kayo Rodriguez</a>: Desenvolveu todo o roteiro, script, cenas, telas, sons, diálogos e a lógica do jogo. Fazendo com que o jogo obtesse o resultado desejado.</li>
+<li><a href="https://github.com/JeovaneSilva" target="_blank">Jeovane Lima</a>: fundador do projeto e participou da criação da tela de menu, revisão dos scripts e pesquisas sobre ideias para agregar no jogo.</li>
+</ul>
 <p><br></p>
 
-##Desenvolvido por: 
-<p>
-  <a href="https://github.com/KayoRodrigues1235">Kayo Rodriguez</a> e <a href="">Jeovane Lima</a>
-</p>
+## Ferramentas Utilizadas:
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
-## O que é o projeto?
+## O Que é o Projeto?
 <p>A ideia do projeto surgiu a partir de uma extensa pesquisa centrada em jogos associados ao meio ambiente, o presente 
 estudo propôs a concepção de um jogo em formato 2D. Esse jogo tem como propósito a abordagem de diversas 
 problemáticas ambientais, valendo-se da implementação de programação aliada a uma estratégia educacional baseada 
@@ -32,7 +40,7 @@ predisposição para adotar práticas mais sustentáveis em suas vidas cotidiana
 </ul>
 <p><br></p>
 
-## ​📷​ Imagens do projeto:
+## ​📷​ Imagens do Projeto:
 
 
 <div align="center" > 
