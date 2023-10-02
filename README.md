@@ -1,13 +1,34 @@
 # Ecophysis
 ⬜ Projeto em andamento
-## O que é o projeto?
+
+## ​​​​🖥️​ Desenvolvido por: 
+<ul>
+<li><a href="https://github.com/KayoRodrigues1235" target="_blank">Kayo Rodrigues</a>: Desenvolveu todo o roteiro, script, cenas, telas, sons, diálogos e a lógica do jogo. Fazendo com que o projeto obtesse o resultado desejado.</li>
+<li><a href="https://github.com/JeovaneSilva" target="_blank">Jeovane Lima</a>: fundador do projeto e participou da criação da tela de menu, revisão dos scripts e pesquisas sobre ideias para agregar no jogo.</li>
+</ul>
+<p><br></p>
+
+## ​⚒️​ Ferramentas Utilizadas:
+
+![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)   ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)   ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+<ul>
+  <li>Godot Engine</li>
+  <li>GDScript</li>
+  <li>Visual Scripting</li>
+  <li>C# </li>
+  <li>C++</li>
+</ul>
+ <p><br></p>
+ 
+## ​​​🤷🏾​ O Que é o Projeto?
 <p>A ideia do projeto surgiu a partir de uma extensa pesquisa centrada em jogos associados ao meio ambiente, o presente 
 estudo propôs a concepção de um jogo em formato 2D. Esse jogo tem como propósito a abordagem de diversas 
 problemáticas ambientais, valendo-se da implementação de programação aliada a uma estratégia educacional baseada 
 em gamificação. Por meio dessa abordagem, os estudantes podem engajar-se em desafios ao longo do jogo, os quais 
 se debruçam sobre questões ambientais de relevância. </p>
+<p><br></p>
 
-## ✅​ Objetivos
+## ✅​ Objetivos:
 <ul>
 <li> Promover Conscientização: Desenvolver a consciência ambiental dos jogadores, aumentando seu 
 entendimento sobre questões ambientais e seus impactos.</li>
@@ -22,7 +43,41 @@ importância desse hábito.
 <li> Fomentar Mudanças de Atitude: Esperar que, ao final do jogo, os jogadores tenham uma maior 
 predisposição para adotar práticas mais sustentáveis em suas vidas cotidianas.</li>
 </ul>
+<p><br></p>
 
-## ​📷​ Imagens do projeto
+## ​📷​ Imagens do Projeto:
 
 
+<div align="center" > 
+<h2> Tela de desenvolvimento da Godot </h2>
+<img src="imagens-ecophysis/tela-godot.png" width="700" >
+
+<h2> Script do jogador</h2>
+<img src="imagens-ecophysis/script-do-player.png" width="700"> 
+<p><br></p>
+<img src="imagens-ecophysis/script-do-player-2.png" width="700">
+
+<h2>Tela de menu </h2>
+<img src="imagens-ecophysis/tela-menu.png" width="700">
+
+<h2>Tela incial do jogo</h2>
+<img src="imagens-ecophysis/tela-inicial.png" width="700">
+
+<h2>Tela de exemplo dos monstros gosmentos</h2>
+<img src="imagens-ecophysis/exemplo-dos-inimigos.png" width="700">
+
+<h2>Tela de como matar os monstros</h2>
+<img src="imagens-ecophysis/como-matar-inimigo.png" width="700">
+
+<h2>Tela dos itens coletáveis espalhados pelo mapa</h2>
+<img src="imagens-ecophysis/itens-coletáveis-no-mapa.png" width="700">
+
+<h2>Tela Game Over</h2>
+<img src="imagens-ecophysis/tela-game-over.png" width="700"> </div>
+<p><br></p>
+
+## ​👋🏽​ Considerações finais:
+<p>Gostariamos de expressar nossa mais profunda gratidão a todos que dedicaram seu tempo para ler sobre o nosso projeto. Cada olhar atento, cada minuto gasto compreendendo o que estamos tentando alcançar aqui é uma luz que ilumina nosso caminho. Seu apoio é um lembrete constante de que não estamos sozinhos nesta jornada e que nossa comunidade é repleta de pessoas generosas e apaixonadas. Estamos ansiosos para continuar compartilhando nosso progresso e colaborando com todos vocês. Juntos, podemos fazer grandes coisas e criar um impacto significativo. </p>
+
+
+<!--https://dev.to/envoy_/150-badges-for-github-pnk--!>
